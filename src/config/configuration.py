@@ -10,8 +10,8 @@ class ConfigurationManager:
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         params = DataIngestionConfig(
-            google_drive_url=self.config.raw_data.google_drive_url,
-            output_path=self.config.raw_data.output_path,
-            extract_to=self.config.raw_data.extract_to
+            google_drive_url=self.config.data.google_drive_url,
+            download_path=self.config.data.download_path,
+            extract_to=self.config.data.extract_to
             )
         return params 

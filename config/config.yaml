@@ -1,4 +1,6 @@
-raw_data:
+data:
   google_drive_url: https://drive.google.com/file/d/10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc/view?usp=drive_link
-  output_path: data/raw/data.zip
-  extract_to: data/interim
+  download_path: data/external/data.zip # downloaded folder
+  extract_to: data/raw # extracted folder
+  interim_path: data/interim # processed folder
+  processed_path: data/processed # train and test folder
