@@ -12,7 +12,7 @@ os.makedirs(log_dir, exist_ok=True)
 stream_handler = logging.StreamHandler()
 file_handler = logging.FileHandler(os.path.join(log_dir, log_file))
 
-formatter = "%(asctime)s - %(module)s - %(levelname)s - %(message)s" 
+formatter = "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 
 
 # Create log config
 logging.basicConfig(

@@ -10,7 +10,6 @@ class DataIngestion:
     def __init__(self, config):
         self.config=config
 
-    
     def download_and_extract_zip(self):
         """
         Downloads a ZIP file from Google Drive, extracts it, and removes any extra folder.
@@ -23,15 +22,15 @@ class DataIngestion:
         try:
             # Step 1: Download the ZIP file
             gdown.download(self.config.google_drive_url, 
-                        self.config.output_path, quiet=False, fuzzy=True)
-            print(f"Downloaded file saved to: {self.config.output_path}")
+                        self.config.download_path, quiet=False, fuzzy=True)
+            print(f"Downloaded file saved to: {self.config.download_path}")
             
             # Step 2: Check if the file is a ZIP file
-            if not zipfile.is_zipfile(self.config.output_path):
+            if not zipfile.is_zipfile(self.config.download_path):
                 raise zipfile.BadZipFile("Downloaded file is not a valid ZIP file.")
             
             # Step 3: Extract the ZIP file
-            with zipfile.ZipFile(self.config.output_path, 'r') as zip_ref:
+            with zipfile.ZipFile(self.config.download_path, 'r') as zip_ref:
                 zip_ref.extractall(self.config.extract_to)
             print(f"Extracted contents to: {self.config.extract_to}")
             
