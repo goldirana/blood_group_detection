@@ -126,15 +126,20 @@ def read_json(path):
         logger.info(e)
         raise e      
 
-def log_error(func, sucess_message, error_message):
-    def wrapper(*args, **kwargs):
-        try:
-            func(*args, **kwargs)
-            logger.info(sucess_message)
-        except Exception as e:
-            logger.error(f"Exception occured at func: {func.__name__}\nError Message: {error_message}")
-            raise e
-    return wrapper
+def log_error(sucess_message=None, faliure_message=None):
+    def decorator(func):  # This is the actual decorator
+        def wrapper(*args, **kwargs):
+            try:
+                result = func(*args, **kwargs)
+                if sucess_message is not None:
+                    logger.info(sucess_message)
+                return result
+            except Exception as e:
+                print(f"ERROR: {faliure_message}\nException in {func.__name__}: {e}")
+                raise
+        return wrapper
+    return decorator  
+
             
             
 
