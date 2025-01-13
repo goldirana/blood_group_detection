@@ -1,0 +1,10 @@
+2025-01-13 16:30:42,234 - __init__ - INFO - \e[4;30m This is test
+2025-01-13 16:30:42,234 - __init__ - ERROR - This is error
+2025-01-13 16:31:03,981 - __init__ - INFO - \e[4;30m This is test
+2025-01-13 16:31:03,981 - __init__ - ERROR - This is error
+2025-01-13 16:31:39,948 - __init__ - INFO - [4;30m This is test
+2025-01-13 16:31:39,949 - __init__ - ERROR - This is error
+2025-01-13 16:32:07,353 - __init__ - INFO - [1;31m This is test
+2025-01-13 16:32:07,353 - __init__ - ERROR - This is error
+2025-01-13 16:32:52,228 - __init__ - INFO - [1;31m This is test[0m
+2025-01-13 16:32:52,228 - __init__ - ERROR - This is error
