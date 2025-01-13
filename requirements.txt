@@ -15,4 +15,6 @@ torch
 gdown
 python-box==6.0.2
 ensure
+mlflow
+opencv-python
 -e .

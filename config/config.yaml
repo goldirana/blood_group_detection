@@ -1,0 +1,4 @@
+raw_data:
+  google_drive_url: https://drive.google.com/file/d/10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc/view?usp=drive_link
+  output_path: data/raw/data.zip
+  extract_to: data/interim

@@ -1,0 +1,27 @@
+2025-01-13 16:59:05,246 - common - ERROR - FileNotFoundError: config/config.yaml
+2025-01-13 17:13:47,782 - common - INFO - Yaml read successfully from config/config.yaml
+2025-01-13 17:32:32,369 - common - ERROR - FileNotFoundError: config/config.yaml
+2025-01-13 17:32:32,375 - common - ERROR - FileNotFoundError: params.yaml
+2025-01-13 17:33:51,303 - common - ERROR - FileNotFoundError: config/config.yaml
+2025-01-13 17:33:51,304 - common - ERROR - FileNotFoundError: params.yaml
+2025-01-13 17:34:27,301 - common - INFO - Yaml read successfully from config/config.yaml
+2025-01-13 17:34:27,302 - common - INFO - Yaml read successfully from params.yaml
+2025-01-13 17:34:27,303 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ First argument must be mapping or iterable
+2025-01-13 17:34:53,513 - common - INFO - Yaml read successfully from config/config.yaml
+2025-01-13 17:34:53,514 - common - INFO - Yaml read successfully from params.yaml
+2025-01-13 17:34:53,514 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ First argument must be mapping or iterable
+2025-01-13 17:35:14,058 - common - INFO - Yaml read successfully from config/config.yaml
+2025-01-13 17:35:14,060 - common - INFO - Yaml read successfully from params.yaml
+2025-01-13 17:35:14,060 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ First argument must be mapping or iterable
+2025-01-13 17:35:19,706 - common - INFO - Yaml read successfully from config/config.yaml
+2025-01-13 17:35:19,707 - common - INFO - Yaml read successfully from params.yaml
+2025-01-13 17:35:19,708 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ First argument must be mapping or iterable
+2025-01-13 17:35:19,760 - connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
+2025-01-13 17:35:21,852 - connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?id=10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc HTTP/11" 200 None
+2025-01-13 17:35:22,212 - connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?id=10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc&confirm=t&uuid=b92d345a-2ef1-4381-919b-3bebdaa383d8 HTTP/11" 303 0
+2025-01-13 17:35:25,439 - connectionpool - DEBUG - Starting new HTTPS connection (1): doc-14-bg-docs.googleusercontent.com:443
+2025-01-13 17:35:27,774 - connectionpool - DEBUG - https://doc-14-bg-docs.googleusercontent.com:443 "GET /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/elph8gns5r4etgheldkncd014jf50l1n/1736769900000/05264000485467872460/*/10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc?uuid=b92d345a-2ef1-4381-919b-3bebdaa383d8 HTTP/11" 200 60963680
