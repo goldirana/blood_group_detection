@@ -11,6 +11,8 @@ pandas
 pip
 python-dotenv
 scikit-learn
-pytorch
+torch
 gdown
+python-box==6.0.2
+ensure
 -e .
