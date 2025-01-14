@@ -1,7 +1,9 @@
 from src.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
 from src import logger
 from src.utils.common import read_yaml
-from src.entity.config_entity import DataIngestionConfig
+from src.entity.config_entity import (DataIngestionConfig,
+                                      ImagePreprocessingConfig)
+
 
 class ConfigurationManager:
     def __init__(self):
@@ -15,3 +17,10 @@ class ConfigurationManager:
             extract_to=self.config.data.extract_to
             )
         return params 
+    
+    def get_image_preprocessing_config(self):
+        params=ImagePreprocessingConfig(
+            raw_path=self.config.data.extract_to,
+            interim_path=self.config.data.interim_path
+        )
+        return params

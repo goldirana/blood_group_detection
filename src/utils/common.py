@@ -141,7 +141,7 @@ def log_error(sucess_message=None, faliure_message=None):
         return wrapper
     return decorator  
 
-def get_multiprocessing(func, iterable):
+def perform_multiprocessing(func, iterable):
     with Pool(processes=cpu_count()) as pool:
         tqdm(pool.imap(func, iterable), total=len(iterable))
 
