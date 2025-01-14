@@ -4,3 +4,6 @@ data:
   extract_to: data/raw # extracted folder
   interim_path: data/interim # image processed folder
   processed_path: data/processed # train and test folder
+  train_size: 0.7
+  test_size: 0.2
+  val_size: 0.1
