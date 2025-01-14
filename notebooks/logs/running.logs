@@ -1,101 +1,85 @@
-2025-01-13 16:59:05,246 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 17:13:47,782 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 17:32:32,369 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 17:32:32,375 - common - ERROR - FileNotFoundError: params.yaml
-2025-01-13 17:33:51,303 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 17:33:51,304 - common - ERROR - FileNotFoundError: params.yaml
-2025-01-13 17:34:27,301 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 17:34:27,302 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 17:34:27,303 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 17:34:53,513 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 17:34:53,514 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 17:34:53,514 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 17:35:14,058 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 17:35:14,060 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 17:35:14,060 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 17:35:19,706 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 17:35:19,707 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 17:35:19,708 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 17:35:19,760 - connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
-2025-01-13 17:35:21,852 - connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?id=10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc HTTP/11" 200 None
-2025-01-13 17:35:22,212 - connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?id=10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc&confirm=t&uuid=b92d345a-2ef1-4381-919b-3bebdaa383d8 HTTP/11" 303 0
-2025-01-13 17:35:25,439 - connectionpool - DEBUG - Starting new HTTPS connection (1): doc-14-bg-docs.googleusercontent.com:443
-2025-01-13 17:35:27,774 - connectionpool - DEBUG - https://doc-14-bg-docs.googleusercontent.com:443 "GET /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/elph8gns5r4etgheldkncd014jf50l1n/1736769900000/05264000485467872460/*/10ApjOcTo6tjO34q5et-ij-tbrSm0Waqc?uuid=b92d345a-2ef1-4381-919b-3bebdaa383d8 HTTP/11" 200 60963680
-2025-01-13 18:12:28,014 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 18:12:28,021 - common - ERROR - FileNotFoundError: params.yaml
-2025-01-13 18:13:57,464 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:13:57,465 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:13:57,466 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:20:48,439 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:20:48,443 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:20:48,447 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:21:10,453 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:21:10,456 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:21:10,456 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:21:10,458 - common - INFO - All files read sucessfully
-2025-01-13 18:21:52,464 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:21:52,468 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:21:52,469 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:21:52,470 - common - INFO - All files read sucessfully
-2025-01-13 18:23:36,028 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:23:36,030 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:23:36,030 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:23:36,059 - common - INFO - Images path read sucessfully
-2025-01-13 18:32:43,985 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 18:32:43,987 - common - ERROR - FileNotFoundError: params.yaml
-2025-01-13 18:39:26,291 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 18:39:26,294 - common - ERROR - FileNotFoundError: params.yaml
-2025-01-13 18:39:35,325 - common - ERROR - FileNotFoundError: config/config.yaml
-2025-01-13 18:39:35,327 - common - ERROR - FileNotFoundError: params.yaml
-2025-01-13 18:39:42,677 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:39:42,678 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:39:42,679 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:42:19,159 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:42:19,161 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:42:19,162 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:42:31,540 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:42:31,542 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:42:31,542 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-13 18:47:22,845 - common - INFO - Yaml read successfully from config/config.yaml
-2025-01-13 18:47:22,847 - common - INFO - Yaml read successfully from params.yaml
-2025-01-13 18:47:22,848 - common - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-14 16:51:00,401 - matplotlib - DEBUG - matplotlib data path: /Users/goldyrana/miniconda3/envs/blood_group/lib/python3.8/site-packages/matplotlib/mpl-data
-2025-01-14 16:51:00,405 - matplotlib - DEBUG - CONFIGDIR=/Users/goldyrana/.matplotlib
-2025-01-14 16:51:00,407 - matplotlib - DEBUG - interactive is False
-2025-01-14 16:51:00,407 - matplotlib - DEBUG - platform is darwin
-2025-01-14 16:51:00,449 - matplotlib - DEBUG - CACHEDIR=/Users/goldyrana/.matplotlib
-2025-01-14 16:51:00,451 - matplotlib.font_manager - DEBUG - Using fontManager instance from /Users/goldyrana/.matplotlib/fontlist-v330.json
-2025-01-14 16:51:33,588 - root - INFO - Yaml read successfully from config/config.yaml
-2025-01-14 16:51:33,590 - root - INFO - Yaml read successfully from params.yaml
-2025-01-14 16:51:33,590 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-14 16:51:45,536 - root - INFO - Yaml read successfully from config/config.yaml
-2025-01-14 16:51:45,538 - root - INFO - Yaml read successfully from params.yaml
-2025-01-14 16:51:45,538 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-14 16:52:39,333 - root - INFO - Yaml read successfully from config/config.yaml
-2025-01-14 16:52:39,334 - root - INFO - Yaml read successfully from params.yaml
-2025-01-14 16:52:39,335 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-14 16:53:26,697 - root - INFO - Yaml read successfully from config/config.yaml
-2025-01-14 16:53:26,699 - root - INFO - Yaml read successfully from params.yaml
-2025-01-14 16:53:26,701 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-14 16:55:11,715 - root - INFO - Yaml read successfully from config/config.yaml
-2025-01-14 16:55:11,716 - root - INFO - Yaml read successfully from params.yaml
-2025-01-14 16:55:11,716 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
- First argument must be mapping or iterable
-2025-01-14 16:55:16,581 - root - INFO - Folder splitted sucessfully
+2025-01-14 19:43:53,930 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 19:43:53,934 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 19:43:53,938 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 19:44:16,678 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 19:44:16,680 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 19:44:16,682 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 19:44:48,508 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 19:44:48,512 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 19:44:48,514 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 19:45:16,512 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 19:45:16,514 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 19:45:16,516 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 20:34:31,854 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 20:34:31,857 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 20:34:31,859 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 20:35:36,861 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 20:35:36,863 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 20:35:36,865 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 20:36:40,294 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 20:36:40,297 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 20:36:40,300 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 20:39:03,825 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 20:39:03,829 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 20:39:03,831 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 20:42:57,292 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 20:42:57,295 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 20:42:57,297 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 22:04:15,741 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:04:15,743 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:04:15,745 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 22:05:14,622 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:05:14,626 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:05:14,628 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 22:06:40,266 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:06:40,268 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:06:40,271 - root - INFO - Yaml read successfully from src/models/vanilla/vanilla_params.yaml
+2025-01-14 22:07:41,783 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:07:41,785 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:09:51,069 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:09:51,074 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:11:21,494 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:11:21,496 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ while scanning a simple key
+  in "params.yaml", line 3, column 3
+could not find expected ':'
+  in "params.yaml", line 5, column 1
+2025-01-14 22:12:18,086 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:12:18,088 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ while scanning a simple key
+  in "params.yaml", line 3, column 3
+could not find expected ':'
+  in "params.yaml", line 5, column 1
+2025-01-14 22:13:15,094 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:13:15,097 - root - ERROR - Exception occured while reading yaml file from                         location: params.yaml
+ while scanning a simple key
+  in "params.yaml", line 3, column 3
+could not find expected ':'
+  in "params.yaml", line 5, column 1
+2025-01-14 22:14:50,837 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:14:50,841 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:15:05,879 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:15:05,882 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:15:39,145 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:15:39,148 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:15:50,133 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:15:50,135 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:16:01,226 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:16:01,229 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:16:14,244 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:16:14,246 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:16:14,247 - root - INFO - Initializing transformation on train data
+2025-01-14 22:16:35,249 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:16:35,253 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:16:35,254 - root - INFO - Initializing transformation on train data
+2025-01-14 22:17:21,832 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:17:21,835 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:17:47,911 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:17:47,913 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:18:19,414 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:18:19,417 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:18:26,426 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:18:26,429 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:18:55,246 - root - INFO - Yaml read successfully from config/config.yaml
+2025-01-14 22:18:55,250 - root - INFO - Yaml read successfully from params.yaml
+2025-01-14 22:18:55,251 - root - INFO - Initializing transformation on train data

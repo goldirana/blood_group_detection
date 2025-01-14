@@ -18,4 +18,5 @@ ensure
 mlflow
 opencv-python
 split-folders==0.5.1
+torchvision
 -e .
