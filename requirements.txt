@@ -17,4 +17,5 @@ python-box==6.0.2
 ensure
 mlflow
 opencv-python
+split-folders==0.5.1
 -e .
