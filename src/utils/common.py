@@ -6,6 +6,8 @@ from pathlib import Path
 from typing import Any
 import pickle
 import numpy as np
+from multiprocessing import Pool, cpu_count
+from tqdm import tqdm
 
 
 def create_directory(path: str, is_extension_present: bool=True)-> None:
@@ -22,9 +24,8 @@ def create_directory(path: str, is_extension_present: bool=True)-> None:
         if _ == False:
             os.makedirs(path, exist_ok=True) # create directoy at given location
             logger.info("Creating directory at %s", path)
-        # else: 
-        #     os.makedirs(str(path), exist_ok=Fa)pro
-        #     logger.info("Deleting previous directory and creating directory at %s", path)
+        else: 
+            pass
     except Exception as e:
         logger.error(f"Error occured while creating directory at {path} \n{e}")
 
@@ -37,7 +38,7 @@ def split_file_extension(path: str) -> str:
     """
     try:
         root_dir = str(Path(path).resolve().parent)
-        logger.debug("File path without extension is %s", root_dir)
+        # logger.debug("File path without extension is %s", root_dir)
         return root_dir
     except Exception as e:
         logger.error(e)
@@ -54,10 +55,10 @@ def check_directory_path(path: str) -> None:
     try:
         check = os.path.isdir(path)
         if check:
-            logger.info("Directory already present at %s", path)
+            # logger.info("Directory already present at %s", path)
             return True
         else:
-            logger.info("Directory not present at %s", path)
+            # logger.info("Directory not present at %s", path)
             return False
     except Exception as e:
         logger.error(e)
@@ -140,7 +141,8 @@ def log_error(sucess_message=None, faliure_message=None):
         return wrapper
     return decorator  
 
-            
-            
+def get_multiprocessing(func, iterable):
+    with Pool(processes=cpu_count()) as pool:
+        tqdm(pool.imap(func, iterable), total=len(iterable))
 
 
