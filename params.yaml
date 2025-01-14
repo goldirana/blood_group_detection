@@ -1,0 +1,5 @@
+training:
+  epochs: 5
+
+mlflow_params:
+  uri: https://dagshub.com/RajeshGoldy/blood_group_detection.mlflow
