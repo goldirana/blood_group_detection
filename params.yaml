@@ -1,5 +1,24 @@
 training:
   epochs: 5
+  batch_size: 32
 
 mlflow_params:
   uri: https://dagshub.com/RajeshGoldy/blood_group_detection.mlflow
+
+image_params:
+  height: 100
+  width: 96
+  channels: 1
+  no_categories: 8
+  
+  
+  # image transformation params: src/config/configuration/ImageTransformationConfig
+image_transformation:
+  height: 100
+  width: 96
+  mean: 0
+  std: 1
+  batch_size: 32
+  shuffle: True
+  workers: 4
+

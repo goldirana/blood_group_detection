@@ -1,0 +1,14 @@
+layers:
+  first:
+    in_channels: 3
+    out_channels: 32
+    kernel_size: [3, 3]
+    stride: 1
+    padding: 1
+  second:
+    in_channels: 32
+    out_channels: 64
+    kernel_size: [3, 3]
+    stride: 1
+    padding: 1
+  
