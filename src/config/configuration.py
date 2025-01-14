@@ -5,7 +5,8 @@ from src.utils.common import read_yaml
 from src.entity.config_entity import (DataIngestionConfig,
                                       ImagePreprocessingConfig,
                                       SplitFolderConfig,
-                                      VanillaModelConfig)
+                                      VanillaModelConfig,
+                                      ImageTransformationConfig)
 
 
 class ConfigurationManager:
@@ -41,6 +42,22 @@ class ConfigurationManager:
         )
         return params
     
+    def get_image_transformation_params(self)->ImageTransformationConfig:
+        params=ImageTransformationConfig(
+            image_shape=[self.params.image_transformation.height,
+                        self.params.image_transformation.width],
+
+            mean=self.params.image_transformation.mean,
+            std=self.params.image_transformation.std,
+            # Directory params
+
+            train_path=self.config.data.train_path,
+            batch_size=self.params.image_transformation.batch_size,
+            shuffle=self.params.image_transformation.shuffle,
+            num_workers=self.params.image_transformation.workers
+        )
+        return params
+
     def get_vanilla_architecture_params(self) -> VanillaModelConfig:
         params=VanillaModelConfig(
             # Getting params from params.yaml
