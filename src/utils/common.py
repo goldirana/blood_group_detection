@@ -8,6 +8,7 @@ import pickle
 import numpy as np
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
+import splitfolders
 
 
 def create_directory(path: str, is_extension_present: bool=True)-> None:
@@ -145,4 +146,9 @@ def perform_multiprocessing(func, iterable):
     with Pool(processes=cpu_count()) as pool:
         tqdm(pool.imap(func, iterable), total=len(iterable))
 
+@log_error(sucess_message="Folder splitted sucessfully", faliure_message="In splitting folders")
+def split_image_folder(size_ratio: tuple, base_dir: str, target_dir: str):
+    splitfolders.ratio(base_dir, output=target_dir,
+                       seed=42, ratio=size_ratio)
+    
 

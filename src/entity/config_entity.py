@@ -12,3 +12,10 @@ class DataIngestionConfig:
 class ImagePreprocessingConfig:
     raw_path: str
     interim_path: str
+
+
+@dataclass
+class SplitFolderConfig:
+    interim_path: str
+    processed_path: str
+    size_ratio: tuple

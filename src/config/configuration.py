@@ -2,7 +2,8 @@ from src.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
 from src import logger
 from src.utils.common import read_yaml
 from src.entity.config_entity import (DataIngestionConfig,
-                                      ImagePreprocessingConfig)
+                                      ImagePreprocessingConfig,
+                                      SplitFolderConfig)
 
 
 class ConfigurationManager:
@@ -22,5 +23,15 @@ class ConfigurationManager:
         params=ImagePreprocessingConfig(
             raw_path=self.config.data.extract_to,
             interim_path=self.config.data.interim_path
+        )
+        return params
+    
+    def get_split_folder_config(self):
+        params = SplitFolderConfig(
+            interim_path=self.config.data.interim_path,
+            processed_path=self.config.data.processed_path,
+            size_ratio=(self.config.data.train_size,
+                        self.config.data.test_size,
+                        self.config.data.val_size)          
         )
         return params
