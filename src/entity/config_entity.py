@@ -40,3 +40,8 @@ class ImageTransformationConfig:
     batch_size: int
     shuffle: bool
     num_workers:int
+
+
+@dataclass
+class ModelTrainingConfig:
+    epochs: int

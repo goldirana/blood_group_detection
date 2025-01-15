@@ -4,7 +4,7 @@ from torch import nn
 import torch as th
 
 
-class Model(nn.Module):
+class VanillaModel(nn.Module):
     def __init__(self, config):
         super().__init__()
         self.config=config
@@ -46,14 +46,17 @@ class Model(nn.Module):
         return x
     
 
+    def __name__(self):
+        return "Vanilla"
+
 if __name__ == "__main__":
     config_manager = ConfigurationManager()
     config_params = config_manager.get_vanilla_architecture_params()
 
-    model = Model(config_params)
+    model = VanillaModel(config_params)
 
     # Training loop
-f   for epoch in range(2):
+    for epoch in range(2):
         model.train()
     
         for images, labels in train_loader:
