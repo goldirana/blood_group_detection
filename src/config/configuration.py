@@ -6,7 +6,8 @@ from src.entity.config_entity import (DataIngestionConfig,
                                       ImagePreprocessingConfig,
                                       SplitFolderConfig,
                                       VanillaModelConfig,
-                                      ImageTransformationConfig)
+                                      ImageTransformationConfig,
+                                      ModelTrainingConfig)
 
 
 class ConfigurationManager:
@@ -42,7 +43,7 @@ class ConfigurationManager:
         )
         return params
     
-    def get_image_transformation_params(self)->ImageTransformationConfig:
+    def get_image_transformation_config(self)->ImageTransformationConfig:
         params=ImageTransformationConfig(
             image_shape=[self.params.image_transformation.height,
                         self.params.image_transformation.width],
@@ -57,8 +58,14 @@ class ConfigurationManager:
             num_workers=self.params.image_transformation.workers
         )
         return params
-
-    def get_vanilla_architecture_params(self) -> VanillaModelConfig:
+    
+    def get_model_training_config(self):
+        params=ModelTrainingConfig(
+            epochs=self.params.training.epochs
+        )
+        return params
+    
+    def get_vanilla_architecture_config(self) -> VanillaModelConfig:
         params=VanillaModelConfig(
             # Getting params from params.yaml
             image_height=self.params.image_params.height,
