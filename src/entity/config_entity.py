@@ -45,3 +45,9 @@ class ImageTransformationConfig:
 @dataclass
 class ModelTrainingConfig:
     epochs: int
+    basemodule: str
+    submodule: str
+    modelclass: str
+    optimizer: str
+    optimizer_args: dict
+    criterion: str

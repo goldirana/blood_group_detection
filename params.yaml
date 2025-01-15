@@ -1,7 +1,3 @@
-training:
-  epochs: 5
-  batch_size: 32
-
 mlflow_params:
   uri: https://dagshub.com/RajeshGoldy/blood_group_detection.mlflow
 
@@ -18,7 +14,20 @@ image_transformation:
   width: 96
   mean: 0
   std: 1
-  batch_size: 32
+  batch_size: 2
   shuffle: True
-  workers: 4
+  workers: 0
 
+train_model: #  Used in src/models/training.py
+  basemodule: src.models.vanilla # change vanilla to other module 
+  submodule: model # this will remain constant
+  modelclass: VanillaModel # class in module
+  optimizer: Adam
+  optimizer_args:
+    lr: 0.01
+
+  criterion: "CrossEntropyLoss"
+
+training:
+  epochs: 2
+  batch_size: 2
