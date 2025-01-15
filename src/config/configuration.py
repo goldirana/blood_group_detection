@@ -61,19 +61,25 @@ class ConfigurationManager:
     
     def get_model_training_config(self):
         params=ModelTrainingConfig(
-            epochs=self.params.training.epochs
+            epochs=self.params.training.epochs,
+            basemodule=self.params.train_model.basemodule,
+            submodule=self.params.train_model.submodule,
+            modelclass=self.params.train_model.modelclass,
+            optimizer=self.params.train_model.optimizer,
+            optimizer_args=self.params.train_model.optimizer_args,
+            criterion=self.params.train_model.criterion
         )
         return params
     
-    def get_vanilla_architecture_config(self) -> VanillaModelConfig:
-        params=VanillaModelConfig(
-            # Getting params from params.yaml
-            image_height=self.params.image_params.height,
-            image_width=self.params.image_params.width,
+    def get_architecture_config(self) -> VanillaModelConfig:
+        if self.params.train_model.modelclass == "VanillaModel":
+            params=VanillaModelConfig(
+                # Getting params from params.yaml
+                image_height=self.params.image_params.height,
+                image_width=self.params.image_params.width,
 
-            # Getting vanilla params from vanilla_params.yaml
-            layer_1=self.vanilla.layers.first, # access vanilla architecture layer 1 params
-            layer_2=self.vanilla.layers.second # access vanilla architecture layer 2 params
-
-        )
-        return params
+                # Getting vanilla params from vanilla_params.yaml
+                layer_1=self.vanilla.layers.first, # access vanilla architecture layer 1 params
+                layer_2=self.vanilla.layers.second # access vanilla architecture layer 2 params
+            )
+            return params
